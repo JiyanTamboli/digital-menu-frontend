@@ -1,0 +1,38 @@
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+
+.custom-btn-left {
+  font-weight: 600;
+  color: #004aad !important;
+  border-radius: 20px;
+  padding: 8px 22px;
+  margin-left: 0;
+  margin-right: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn-left:hover {
+  background-color: #c3d9ff !important;
+  color: #002e75 !important;
+  text-decoration: none;
+}
+
+.custom-btn-right {
+  font-weight: 600;
+  color: #fff !important;
+  background-color: #fddb3a !important;
+  border-radius: 20px;
+  padding: 8px 22px;
+  margin-left: 10px;
+  margin-right: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn-right:hover {
+  background-color: #ffdd57 !important;
+  color: #333 !important;
+  text-decoration: none;
+}

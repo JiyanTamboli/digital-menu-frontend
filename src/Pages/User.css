@@ -1,0 +1,115 @@
+/* Background styling */
+.page-background {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.price-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ffbcc2; /* हल्का लाल रंग */
+  color: #111; /* ब्लैक टेक्स्ट */
+  padding: 6px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.custom-card {
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+}
+
+.availability-true {
+  background: #25ec6e;      /* ग्रीन */
+  color: #111;              /* ब्लैक टेक्स्ट */
+  padding: 4px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.availability-false {
+  background: #222;         /* ब्लैक */
+  color: #fff;              /* व्हाइट टेक्स्ट */
+  padding: 4px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.custom-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.85) !important;
+}
+.custom-navbar .nav-link {
+  color: #f8f9fa !important;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.custom-navbar .nav-link:hover {
+  color: #fddb3a !important;
+}
+
+/* Header text */
+.header-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.header-text h2 {
+  font-size: 1.5rem;
+  color: #fddb3a;
+}
+
+/* Cards */
+.custom-card {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+}
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+.custom-card .card-title {
+  color: #c53a3a;
+  font-weight: bold;
+}
+.custom-card .card-text strong {
+  color: #444;
+}
+
+.custom-card .card-title {
+  color: #c53a3a;
+  font-weight: 700;
+  font-family: 'Georgia', serif; /* टाइटल के लिए सेरिफ़ फॉन्ट */
+  font-size: 1.5rem; /* बड़ा और महत्वपूवर्क टाइटल */
+  font-style: italic; /* थोड़ा स्टाइलिश इफेक्ट */
+}
+
+.custom-card .card-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.custom-card .card-text strong {
+  color: #444;
+  font-weight: 600;
+}

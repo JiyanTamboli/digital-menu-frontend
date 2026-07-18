@@ -1,0 +1,44 @@
+.search-bar-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-input {
+  width: 300px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #c53a3a;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ff6b6b;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background: #f0f0f0;
+  border: 1px solid #c53a3a;
+  color: #c53a3a;
+  padding: 6px 16px;
+  margin: 0 6px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #c53a3a;
+  color: #fff;
+}
+
+.filter-btn.active {
+  background: #c53a3a;
+  color: white;
+}

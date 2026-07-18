@@ -1,0 +1,92 @@
+/* Background styling */
+.admin-background {
+  min-height: 100vh;
+  background: linear-gradient(rgba(20,20,20,0.85), rgba(20,20,20,0.85)),
+              url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Navbar */
+.admin-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.9) !important;
+}
+.admin-navbar .nav-link {
+  color: #f8f9fa !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.admin-navbar .nav-link:hover {
+  color: #fddb3a !important;
+}
+
+.logout-btn {
+  color: #fddb3a; /* Bright yellow */
+  border-color: #fddb3a;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 26px;
+  border-radius: 30px; /* Rounded pill shape */
+  box-shadow: 0 4px 12px rgba(253, 219, 58, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  background-color: transparent;
+}
+.logout-btn:hover {
+  background-color: #fddb3a;
+  color: #000;
+  box-shadow: 0 6px 20px rgba(253, 219, 58, 0.8);
+  transform: translateY(-3px);
+}
+.logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(253, 219, 58, 0.7);
+}
+
+
+/* Status Text */
+.status-text {
+  font-size: 1.6rem;
+  color: #fddb3a;
+  margin-bottom: 20px;
+}
+
+/* Table */
+.custom-table {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.custom-table th {
+  background: #c53a3a;
+  color: white;
+  text-align: center;
+}
+.custom-table td {
+  text-align: center;
+  font-weight: 500;
+}
+.custom-table tr:hover {
+  background-color: rgba(255, 237, 189, 0.8);
+}
+
+/* Buttons */
+.add-btn {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Modal */
+.custom-modal .modal-content {
+  border-radius: 15px;
+  background: #fdfdfd;
+}
+.custom-modal .modal-title {
+  color: #c53a3a;
+  font-weight: bold;
+}
