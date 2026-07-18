@@ -18,7 +18,7 @@ export default function User() {
 
   // Fetch menu data from API when component mounts
   useEffect(() => {
-    axios.get("http://127.0.0.1:4000/user")
+    axios.get("https://digital-menu-backend.onrender.com/user")
       .then((res) => {
         setSts(res.data.status);
         setData(res.data.menu); // Save menu data to state

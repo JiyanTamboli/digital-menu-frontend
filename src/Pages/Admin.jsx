@@ -41,7 +41,7 @@ export default function Admin() {
 
   // Fetches menu data from backend API on initial load and after actions
   const api = () => {
-    axios.get("http://127.0.0.1:4000/user")
+    axios.get("https://digital-menu-backend-2gsm.onrender.com/user")
       .then((res) => {
         setSts(res.data.status);
         setData(res.data.menu);
@@ -99,7 +99,7 @@ export default function Admin() {
       category,
       price,
     };
-    axios.post("http://127.0.0.1:4000/addMenu", dt)
+    axios.post("https://digital-menu-backend-2gsm.onrender.com/addMenu", dt)
       .then(res => {
         console.log("Response from addMenu:", res.data); // API response debug
         if (res.data.status == 200 || res.data.status == '200' || res.data.status === 'Success') {
@@ -129,7 +129,7 @@ export default function Admin() {
       category: updateCategory,
       price: updatePrice,
     };
-    axios.put(`http://127.0.0.1:4000/user/${updateId}`, updatedData)
+    axios.put(`https://digital-menu-backend-2gsm.onrender.com/user/${updateId}`, updatedData)
       .then(res => {
         if (res.data.status === 'Success') {
           alert("Update Success");
@@ -144,7 +144,7 @@ export default function Admin() {
 
   // Delete menu item by ID via API
   const del = (uid) => {
-    axios.delete(`http://127.0.0.1:4000/user/${uid}`)
+    axios.delete(`https://digital-menu-backend-2gsm.onrender.com/user/${uid}`)
       .then(res => {
         if (res.data.status === 'Deleted') {
           alert("Delete Success");
