@@ -129,7 +129,7 @@ export default function Admin() {
       category: updateCategory,
       price: updatePrice,
     };
-    axios.put(`https://digital-menu-backend-2gsm.onrender.com/user/${updateId}`, updatedData)
+    axios.put(`https://digital-menu-backend-2gsm.onrender.com/updateUser/${updateId}`, updatedData)
       .then(res => {
         if (res.data.status === 'Success') {
           alert("Update Success");
@@ -144,7 +144,7 @@ export default function Admin() {
 
   // Delete menu item by ID via API
   const del = (uid) => {
-    axios.delete(`https://digital-menu-backend-2gsm.onrender.com/user/${uid}`)
+    axios.delete(`https://digital-menu-backend-2gsm.onrender.com/deleteUser/${uid}`)
       .then(res => {
         if (res.data.status === 'Deleted') {
           alert("Delete Success");
