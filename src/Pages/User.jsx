@@ -107,7 +107,7 @@ export default function User() {
                       <strong>Spicy Level:</strong> {item.spicy_level}<br />
                       {/* Availability status styling true/false */}
                       <strong>Availability:</strong>
-                      <span className={item.availability_status ? "availability-true" : "availability-false"}>
+                      <span className={item.availability_status ? "Yes" : "No"}>
                         {String(item.availability_status)}
                       </span>
                       <br />
