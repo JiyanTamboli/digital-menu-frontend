@@ -99,6 +99,7 @@ export default function Admin() {
       category,
       price,
     };
+    console.log(dt);
     axios.post("https://digital-menu-backend-2gsm.onrender.com/addMenu", dt)
       .then(res => {
         console.log("Response from addMenu:", res.data); // API response debug
@@ -251,9 +252,9 @@ export default function Admin() {
   <Form.Label>Availability Status</Form.Label>
 
   <Form.Select
-    value={availability}
-    onChange={(e) => setAvailability(e.target.value === "true")}
-  >
+  value={String(availability)}
+  onChange={(e) => setAvailability(e.target.value === "true")}
+>
     <option value="">Select Availability</option>
     <option value="true">Yes</option>
     <option value="false">No</option>
@@ -298,12 +299,12 @@ export default function Admin() {
   <Form.Label>Availability Status</Form.Label>
 
   <Form.Select
-    value={updateAvailability}
-    onChange={(e) => setUpdateAvailability(e.target.value === "true")}
-  >
-    <option value={true}>Yes</option>
-    <option value={false}>No</option>
-  </Form.Select>
+  value={String(updateAvailability)}
+  onChange={(e) => setUpdateAvailability(e.target.value === "true")}
+>
+  <option value="true">Yes</option>
+  <option value="false">No</option>
+</Form.Select>
 </Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>Category</Form.Label>

@@ -108,7 +108,7 @@ export default function User() {
                       {/* Availability status styling true/false */}
                       <strong>Availability:</strong>
                       <span className={item.availability_status ? "availability-true" : "availability-false"}>
-                        {String(item.availability_status)}
+                      {item.availability_status ? "Yes" : "No"}
                       </span>
                       <br />
                     </Card.Text>
