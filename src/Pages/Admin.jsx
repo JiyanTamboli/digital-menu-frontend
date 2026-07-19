@@ -213,7 +213,7 @@ export default function Admin() {
                   <td>{item.item_id}</td>
                   <td>{item.name}</td>
                   <td>{item.description}</td>
-                  <td>{item.availability_status}</td>
+                  <td>{item.availability_status ? "Yes" : "No"}</td>
                   <td>{item.category}</td>
                   <td>{item.spicy_level}</td>
                   <td>₹{item.price}</td>
@@ -248,9 +248,17 @@ export default function Admin() {
             <Form.Control type="text" value={spicy} onChange={(e) => setSpicy(e.target.value)} placeholder="Enter Spicy Level" />
           </Form.Group>
           <Form.Group className="mb-3">
-            <Form.Label>Availability Status</Form.Label>
-            <Form.Control type="text" value={availability} onChange={(e) => setAvailability(e.target.value)} placeholder="Enter Availability" />
-          </Form.Group>
+  <Form.Label>Availability Status</Form.Label>
+
+  <Form.Select
+    value={availability}
+    onChange={(e) => setAvailability(e.target.value === "true")}
+  >
+    <option value="">Select Availability</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </Form.Select>
+</Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>Category</Form.Label>
             <Form.Control type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Enter Category" />
@@ -287,9 +295,16 @@ export default function Admin() {
             <Form.Control type="text" value={updateSpicy} onChange={(e) => setUpdateSpicy(e.target.value)} />
           </Form.Group>
           <Form.Group className="mb-3">
-            <Form.Label>Availability Status</Form.Label>
-            <Form.Control type="text" value={updateAvailability} onChange={(e) => setUpdateAvailability(e.target.value)} />
-          </Form.Group>
+  <Form.Label>Availability Status</Form.Label>
+
+  <Form.Select
+    value={updateAvailability}
+    onChange={(e) => setUpdateAvailability(e.target.value === "true")}
+  >
+    <option value={true}>Yes</option>
+    <option value={false}>No</option>
+  </Form.Select>
+</Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>Category</Form.Label>
             <Form.Control type="text" value={updateCategory} onChange={(e) => setUpdateCategory(e.target.value)} />
